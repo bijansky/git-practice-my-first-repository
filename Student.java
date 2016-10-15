@@ -1,11 +1,11 @@
-public class student {
+public class Student {
   int age;
-  float gpa:
+  float gpa;
   String firstName;
   String lastName;
   String major;
 
-  public Studen() {
+  public Student() {
 
   }
 
@@ -13,5 +13,9 @@ public class student {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
+  }
+
+  public String fullName() {
+    return this.firstName + " " + this.lastName;
   }
 }
