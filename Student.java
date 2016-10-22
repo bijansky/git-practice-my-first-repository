@@ -1,9 +1,9 @@
 public class Student {
   int age;
   float gpa;
-  String firstName;
-  String lastName;
-  String major;
+  private String firstName;
+  private String lastName;
+  private String major;
 
   public Student() {
 
@@ -17,5 +17,15 @@ public class Student {
 
   public String fullName() {
     return this.firstName + " " + this.lastName;
+  }
+
+  public String getMajor(){
+    return this.major;
+  }
+  public int getAge(){
+    return this.age;
+  }
+  public float getGpa(){
+    return this.gpa;
   }
 }
